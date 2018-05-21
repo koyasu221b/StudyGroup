@@ -20,11 +20,16 @@ public class MoveZeroes {
             if(nums[i] == 0){
                 zeroCount++;
             }else {
-               if(i == j){
-                   j++;
-                   continue;
+//               if(i == j){
+//                   j++;
+//                   continue;
+//               }
+//               nums[j]  = nums[i];
+//               j++;
+
+               if(i != j){
+                  nums[j] = nums[i];
                }
-               nums[j]  = nums[i];
                j++;
             }
         }
@@ -49,5 +54,10 @@ public class MoveZeroes {
        int[] nums2 = new int[]{2, 1};
         moveZeroes(nums2);
         display(nums2);
+
+        int[] nums3 = new int[]{2, 0, 0, 0, 5, 1};
+        moveZeroes(nums3);
+        display(nums3);
+
     }
 }
