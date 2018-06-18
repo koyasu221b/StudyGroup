@@ -43,4 +43,9 @@ public class MergeKSortedLists {
         return dummy.next;
 
     }
+
+    public static void main(String[] args) {
+        ClassLoader c = Thread.currentThread().getContextClassLoader();
+        System.out.print(c);
+    }
 }
